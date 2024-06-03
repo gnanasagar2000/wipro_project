@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="bgreq">56</drawable>
+    <drawable name="bgmain">67</drawable>
+</resources>

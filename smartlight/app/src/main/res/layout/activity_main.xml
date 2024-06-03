@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:id="@+id/relativid"
+    >
+
+
+    <TextView
+        android:id="@+id/lightControlTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Lights"
+        android:textSize="25sp" />
+
+    <Switch
+        android:id="@+id/lightSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lightControlTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:id="@+id/thermostatControlTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lightSwitch"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:text="Thermostats"
+        android:textSize="25sp" />
+
+    <SeekBar
+        android:id="@+id/thermostatSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thermostatControlTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:max="100"
+        android:progress="20" />
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thermostatSeekBar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="62dp"
+        android:text="20°C"
+        android:textSize="18sp" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="310dp"
+        android:layout_marginBottom="404dp"
+        android:text="ToggleButton"
+        android:textOff="fan off"
+        android:textOn="fan on" />
+
+</RelativeLayout>
